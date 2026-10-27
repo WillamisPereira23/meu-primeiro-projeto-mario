@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Mario Bros</title>
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img src="./img/logo-cabecalho.png" alt="logo-cabecalho-mario">
+        <a>Home</a>
+        <a onclick="mostrarForm()">Fale Conosco</a>
+        <a href="servicos.html">Nossos Serviços</a>
+
+    </div>
+    <div class="caixa-principal">
+        <div class="caixa-info-texto">
+            <img src="./img/logo.png" alt="logo-site-mario" class="logo-mario" />
+
+            <p>
+                🔧 Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo! 🔧 </p>
+            <p>Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi
+            </p>
+
+            <button onclick="mostrarForm()">Entre em Contato</button>
+        </div>
+        <div class="caixa-logo-luigi-mario">
+            <img src="./img/mario.png" alt="imagem-mario-luidi" class="logo-mario-luidi" />
+        </div>
+
+    </div>
+
+    <div class="caixa-video">
+        <video src="./video/video.mp4" autoplay loop muted></video>
+        <div class="mascara-video"></div>
+    </div>
+    <div class="caixa-link-whatsapp">
+        <a href="https://wa.me/5579984658884?text=Ol%C3%A1%20preciso%20de%20um%20servi%C3%A7o" class="link-whatsapp">
+            <img src="./img/whatsapp.png" alt="">
+        </a>
+    </div>
+
+    <form class="formulario" action="https://formcarry.com/s/-z5fqZVVe2f" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="nome" />
+        <input placeholder="Seu email" type="email" name="email" />
+        <textarea placeholder="Digite seu problema aqui..." name="problema"></textarea>
+        <button type="submit">Pedir orçamento</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+</body>
+
+<script src="scripts.js"></script>
+
+</html>
